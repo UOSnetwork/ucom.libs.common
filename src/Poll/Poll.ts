@@ -51,7 +51,7 @@ interface PollModel {
           [index: string]: any;
           total_votes: number;
         },
-      }
+      },
     }
-  ]
+  ];
 }

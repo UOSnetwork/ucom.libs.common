@@ -20,3 +20,5 @@ export declare const ACTIVITIES_VOTE_UPVOTE__NUMBER = 700;
 export declare const ACTIVITIES_VOTE_UPVOTE__DELTA_PT24H = 701;
 export declare const ACTIVITIES_VOTE_DOWNVOTE__NUMBER = 750;
 export declare const ACTIVITIES_VOTE_DOWNVOTE__DELTA_PT24H = 751;
+export declare const ALL_NUMBERS: number[];
+export declare const ALL_DELTAS: number[];
