@@ -1,5 +1,5 @@
 {
-  "name": "ucom-libs-common",
+  "name": "ucom.libs.common",
   "version": "1.2.0",
   "description": "Methods, interfaces, classes which are used both by frontend and backend application",
   "main": "index.js",
