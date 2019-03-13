@@ -27,4 +27,20 @@ github auth record in backend database. This cookie is auth cookie required to f
 GET https://{hostname}/api/v1/airdrops/1/user
 ```
 
-Response contains user airdrop state. 
+Response contains user airdrop state. Example of response:
+
+```
+{
+    github_score: 550.044,
+    tokens: [
+        {
+            amount: 50025,
+            symbol: 'UOS',
+        },
+        {
+            amount: 82678,
+            symbol: 'FN',
+        },
+    ],
+}
+```
