@@ -10,7 +10,7 @@
     "typescript": "^3.3.3333"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -r ./build && tsc",
     "build-watch": "tsc --watch"
   },
   "repository": {

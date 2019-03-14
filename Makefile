@@ -8,3 +8,6 @@ publish:
 
 check-project:
 	/bin/bash ./check-project.sh
+
+build-project:
+	npm run build
