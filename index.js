@@ -9,4 +9,9 @@ module.exports = {
       BlockchainNodesTypes: require('./build/governance/dictionary/blockchain-nodes-types-dictionary')
     }
   },
+  Airdrop: {
+    Dictionary: {
+      StatusTypes: require('./build/Airdrop/dictionary/status')
+    }
+  },
 };
