@@ -8,49 +8,50 @@ post: {
   // ... all properties of publication ...
   started_at: string, // UTC-formatted datetime
   finished_at: string, // UTC-formatted datetime
-  stats: { // there are two kinds of stats - current and total
-    members: number, // that are ready for receiving airdrop?
-    last_img_src: [ // ?
-      string,
-      string,
+  users_team: number,
+  stats: {
+    last_users: [
+      { userCard },
+      { userCard },
     ],
-    tokens_left: [ // left and total together?
+    tokens: [
       {
-        amount: number,
+        amount_left: number,
         symbol: string,
-        total: number,
+        total_amount: number,
       },
       {
-        amount: number,
+        amount_left: number,
         symbol: string,
-        total: number,
+        total_amount: number,
       },
     ],
   },
-    action_button_title: 'Join GitHub',
-    action_button_url: '{{big link to github auth}}'
 }
 
-stats: { // myself airdrop state?
+one_user_stats: {
+  airdrop_id: number,
+  user_id: number,
   github_score: number,
-  airdrop_status: string, // ?  better to be number
-  tokens: [ // tokens to receive or already received tokens?
+  airdrop_status: number,
+  conditions: {
+    auth_github: boolean,
+    auth_myself: boolean,
+    following_org: boolean,
+  },
+  tokens: [
     {
-      amount: number,
+      amount_claim: number,
       symbol: string,
     },
     {
-      amount: number,
+      amount_claim: number,
       symbol: string,
     },
   ],
 }
 
-condition: { // where to place
-  auth_github: boolean,
-  auth_myself: boolean,
-  following_org: boolean,
-}
+
 ```
 
 ## Example of stats response
@@ -71,7 +72,7 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-03-01T14:07:25Z'
     },
-    
+
     // ========= Organizations (Orgs) ============
     [ORGS_PERSON__NUMBER]: {
         event_type: [ORGS_PERSON__NUMBER],
@@ -86,7 +87,7 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-03-01T14:07:25Z'
     },
-    
+
     // ========= Tags ============
     [TAGS_PERSON__NUMBER]: {
         event_type: [TAGS_PERSON__NUMBER],
@@ -116,7 +117,7 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-03-01T14:07:25Z'
     },
-    
+
     // Replies
     [COMMENTS_REPLY__NUMBER]: {
         event_type: [COMMENTS_REPLY__NUMBER],
@@ -131,7 +132,7 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-03-01T14:07:25Z'
     },
-    
+
     // ========== Posts ===============
     [POSTS_MEDIA__NUMBER]: {
         event_type: [POSTS_MEDIA__NUMBER],
@@ -175,7 +176,7 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-02-27T11:07:25Z'
     },
-    
+
     [POSTS_REPOST_DIRECT__NUMBER]: {
         event_type: [POSTS_REPOST_DIRECT__NUMBER],
         value: 8,
@@ -189,14 +190,14 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-02-27T11:07:25Z'
     },
-    
+
     // Upvotes
     [ACITVITIES_VOTE_UPVOTE__NUMBER]: {
         event_type: [ACITVITIES_VOTE_UPVOTE__NUMBER],
         value: 8,
         recalc_interval: 'PT1H'
         created_at: '2019-02-27T11:07:25Z'
-    },            
+    },
     [ACITVITIES_VOTE_UPVOTE__DELTA_PT24H]: {
         event_type: [ACITVITIES_VOTE_UPVOTE__DELTA_PT24H],
         value: 5,
@@ -204,14 +205,14 @@ condition: { // where to place
         window_interval: 'PT24H',
         created_at: '2019-02-27T11:07:25Z'
     },
-    
+
     // Downvotes
     [ACITVITIES_VOTE_DOWNVOTE__NUMBER]: {
         event_type: [ACITVITIES_VOTE_DOWNVOTE__NUMBER],
         value: 8,
         recalc_interval: 'PT1H'
         created_at: '2019-02-27T11:07:25Z'
-    },            
+    },
     [ACITVITIES_VOTE_DOWNVOTE__DELTA_PT24H]: {
         event_type: [ACITVITIES_VOTE_DOWNVOTE__DELTA_PT24H],
         value: 5,
