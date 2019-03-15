@@ -5,15 +5,16 @@
 
 ```
 post: {
-  ...,
-  date_end: string,
-  stats: {
-    members: number,
-    last_img_src: [
+  // ... all properties of publication ...
+  started_at: string, // UTC-formatted datetime
+  finished_at: string, // UTC-formatted datetime
+  stats: { // there are two kinds of stats - current and total
+    members: number, // that are ready for receiving airdrop?
+    last_img_src: [ // ?
       string,
       string,
     ],
-    tokens_left: [
+    tokens_left: [ // left and total together?
       {
         amount: number,
         symbol: string,
@@ -26,12 +27,14 @@ post: {
       },
     ],
   },
+    action_button_title: 'Join GitHub',
+    action_button_url: '{{big link to github auth}}'
 }
 
-stats: {
+stats: { // myself airdrop state?
   github_score: number,
-  airdrop_status: string,
-  tokens: [
+  airdrop_status: string, // ?  better to be number
+  tokens: [ // tokens to receive or already received tokens?
     {
       amount: number,
       symbol: string,
@@ -43,7 +46,7 @@ stats: {
   ],
 }
 
-condition: {
+condition: { // where to place
   auth_github: boolean,
   auth_myself: boolean,
   following_org: boolean,
