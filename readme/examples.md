@@ -1,5 +1,55 @@
 # Examples
 
+
+## Airdrop interface
+
+```
+post: {
+  ...,
+  date_end: string,
+  stats: {
+    members: number,
+    last_img_src: [
+      string,
+      string,
+    ],
+    tokens_left: [
+      {
+        amount: number,
+        symbol: string,
+        total: number,
+      },
+      {
+        amount: number,
+        symbol: string,
+        total: number,
+      },
+    ],
+  },
+}
+
+stats: {
+  github_score: number,
+  airdrop_status: string,
+  tokens: [
+    {
+      amount: number,
+      symbol: string,
+    },
+    {
+      amount: number,
+      symbol: string,
+    },
+  ],
+}
+
+condition: {
+  auth_github: boolean,
+  auth_myself: boolean,
+  following_org: boolean,
+}
+```
+
 ## Example of stats response
 
 ```
