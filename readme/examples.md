@@ -1,6 +1,5 @@
 # Examples
 
-
 ## Airdrop interface
 
 ```
@@ -8,36 +7,48 @@ post: {
   // ... all properties of publication ...
   started_at: string, // UTC-formatted datetime
   finished_at: string, // UTC-formatted datetime
-  users_team: number,
-  stats: {
-    last_users: [
-      { userCard },
-      { userCard },
+  post_offer_type_id: 1, // Airdrop, new special dictionary
+  users_team: {
+    data: [
+        {
+            // first user card data
+        },
+        {
+            // second user card data
+        },
+        // ...
     ],
+    metadata: {
+        // usual metadata
+    },
+  },
+  offer_data: {
+    airdrop_id: number,
     tokens: [
       {
+        amount_claim: number,
         amount_left: number,
         symbol: string,
-        total_amount: number,
       },
       {
+        amount_claim: number,
         amount_left: number,
         symbol: string,
-        total_amount: number,
       },
+      // ... other tokens related to airdrop
     ],
   },
 }
 
-one_user_stats: {
+one_user_airdrop_stats: {
   airdrop_id: number,
-  user_id: number,
+  user_id: number | null, // null only if airdrop_status = new
   github_score: number,
   airdrop_status: number,
   conditions: {
     auth_github: boolean,
     auth_myself: boolean,
-    following_org: boolean,
+    following_devExchange: boolean,
   },
   tokens: [
     {
@@ -48,10 +59,9 @@ one_user_stats: {
       amount_claim: number,
       symbol: string,
     },
+    // ... other airdrop tokens
   ],
 }
-
-
 ```
 
 ## Example of stats response
