@@ -11,7 +11,7 @@ module.exports = {
   },
   Airdrop: {
     Dictionary: {
-      StatusTypes: require('./build/Airdrop/dictionary/status')
+      StatusTypes: require('./build/airdrop/dictionary/airdrop-statuses')
     }
   },
 };
