@@ -6,3 +6,4 @@ exports.RECEIVED = 3;
 exports.EXPIRED = 4;
 exports.ERROR = 5;
 exports.NO_PARTICIPATION = 6;
+exports.WAITING = 7;
