@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Let's check project"
+echo "Let's check project - are there any GIT uncommitted changes"
 gitOutput="$(git status --porcelain)"
 
 if [[ -z "$gitOutput" ]]; then

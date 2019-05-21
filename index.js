@@ -11,7 +11,8 @@ module.exports = {
   },
   Airdrop: {
     Dictionary: {
-      AirdropStatuses: require('./build/airdrop/dictionary/airdrop-statuses')
+      AirdropStatuses: require('./build/airdrop/dictionary/airdrop-statuses'),
+      AirdropUserPersonalStatuses: require('./build/airdrop/dictionary/airdrop-user-personal-statuses')
     }
   },
   Common: {

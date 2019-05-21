@@ -1,13 +1,37 @@
 publish:
 	git checkout master
-	npm run-script build
-	make check-project
+	make check-project-before-publishing
 	npm version ${VER}
 	git push
 	npm publish
 
-check-project:
-	/bin/bash ./check-project.sh
+check-project-not-committed-changes:
+	/bin/bash ./ci-scripts/check-project-not-committed-changes.sh
 
-build-project:
-	npm run build
+check-project-npm-outdated:
+	/bin/bash ./ci-scripts/check-project-npm-outdated.sh
+
+check-project-before-commit cbc:
+	make compile-typescript
+	make check-by-eslint
+	make check-project-npm-outdated
+	make check-by-snyk
+
+check-project-before-publishing:
+	make check-project-before-commit
+	make check-project-not-committed-changes
+
+compile-typescript:
+	npm run compile-ts
+
+compile-typescript-watch:
+	npm run compile-ts-watch
+
+check-by-eslint:
+	npm run check-by-eslint
+
+check-by-snyk:
+	snyk test
+
+print-current-version pcv:
+	npm list | grep 'common'
