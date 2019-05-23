@@ -17,7 +17,7 @@ check-project-before-commit cbc:
 	make check-project-npm-outdated
 	make check-by-snyk
 
-check-project-before-publishing:
+check-project-before-publishing cbp:
 	make check-project-before-commit
 	make check-project-not-committed-changes
 
