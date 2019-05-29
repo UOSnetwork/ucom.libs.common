@@ -1,6 +1,6 @@
 {
   "name": "ucom.libs.common",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Methods, interfaces, classes which are used both by frontend and backend application",
   "main": "index.js",
   "dependencies": {},
