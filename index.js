@@ -15,6 +15,11 @@ module.exports = {
       AirdropUserPersonalStatuses: require('./build/airdrop/dictionary/airdrop-user-personal-statuses')
     }
   },
+  Events: {
+    Dictionary: {
+      EventsIds: require('./build/events/dictionary/events-ids-dictionary'),
+    }
+  },
   Common: {
     Dictionary: {
       CommonHeaders: require('./build/common/dictionary/common-headers')
