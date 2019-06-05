@@ -22,7 +22,8 @@ module.exports = {
   },
   Common: {
     Dictionary: {
-      CommonHeaders: require('./build/common/dictionary/common-headers')
+      CommonHeaders:  require('./build/common/dictionary/common-headers'),
+      EntityNames:    require('./build/common/dictionary/entity-names')
     }
   },
 };

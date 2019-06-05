@@ -21,7 +21,7 @@
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.5.0",
     "tslint": "^5.17.0",
     "tslint-config-airbnb": "^5.11.1",
-    "tsutils": "^3.13.0",
+    "tsutils": "^3.14.0",
     "typescript": "^3.5.1"
   },
   "scripts": {
