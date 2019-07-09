@@ -7,5 +7,8 @@ class EventsIdsDictionary {
     static referral() {
         return 140;
     }
+    static userCreatesProfile() {
+        return 150;
+    }
 }
 module.exports = EventsIdsDictionary;

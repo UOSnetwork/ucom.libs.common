@@ -8,6 +8,10 @@ class EventsIdsDictionary {
   public static referral(): number {
     return 140;
   }
+
+  public static userCreatesProfile(): number {
+    return 150;
+  }
 }
 
 export = EventsIdsDictionary;
