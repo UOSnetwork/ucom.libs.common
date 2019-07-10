@@ -12,6 +12,10 @@ class EventsIdsDictionary {
   public static userCreatesProfile(): number {
     return 150;
   }
+
+  public static userUpdatesProfile(): number {
+    return 151;
+  }
 }
 
 export = EventsIdsDictionary;

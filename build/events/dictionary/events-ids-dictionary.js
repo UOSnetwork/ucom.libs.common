@@ -10,5 +10,8 @@ class EventsIdsDictionary {
     static userCreatesProfile() {
         return 150;
     }
+    static userUpdatesProfile() {
+        return 151;
+    }
 }
 module.exports = EventsIdsDictionary;
