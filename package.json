@@ -4,7 +4,10 @@
   "description": "Methods, interfaces, classes which are used both by frontend and backend application",
   "main": "index.js",
   "dependencies": {
-    "@hapi/joi": "^15.1.0"
+    "@hapi/joi": "^15.1.0",
+    "os-locale": "^4.0.0",
+    "regexp-tree": "^0.1.11",
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
     "@types/hapi__joi": "^15.0.2",
@@ -15,7 +18,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.12.0",
     "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-optimize-regex": "^1.1.6",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.4.0",

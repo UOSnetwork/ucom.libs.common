@@ -5,7 +5,6 @@ module.exports = {
     "security",
     "promise",
     "jest",
-    "optimize-regex",
     "sonarjs",
   ],
   "extends": [
@@ -25,7 +24,6 @@ module.exports = {
     "jest/globals": true,
   },
   "rules": {
-    "optimize-regex/optimize-regex": "warn",
     "node/no-unsupported-features/es-syntax": 'off',
     "eslint/no-use-before-define": 'off',
     "node/no-unpublished-require": 'off',
