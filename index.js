@@ -30,5 +30,8 @@ module.exports = {
     Dictionary: {
       PostTypes: require('./build/posts/dictionary/post-types'),
     },
+    Validator: {
+      PostFieldsValidator: require('./build/posts/validator/post-fields-validator'),
+    },
   },
 };
