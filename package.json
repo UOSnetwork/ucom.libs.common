@@ -28,7 +28,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "check-by-eslint": "eslint **/*.ts",
+    "check-by-eslint": "eslint **/*.ts --fix",
     "compile-ts": "rm -r ./build && tsc",
     "compile-ts-watch": "tsc --watch"
   },

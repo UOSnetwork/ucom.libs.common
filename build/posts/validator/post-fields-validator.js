@@ -1,7 +1,7 @@
 "use strict";
-const joi = require("@hapi/joi");
 const common_regex_1 = require("../../common/validator/common-regex");
 const entity_names_1 = require("../../common/dictionary/entity-names");
+const joi = require("@hapi/joi");
 const commonInputFieldsSchema = {
     blockchain_id: joi.string().required(),
     title: joi.string().required(),

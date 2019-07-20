@@ -1,6 +1,7 @@
-import joi =  require('@hapi/joi');
 import { DATETIME_STRING_UTC_REGEX } from '../../common/validator/common-regex';
 import { ORGANIZATIONS, USERS } from '../../common/dictionary/entity-names';
+
+import joi =  require('@hapi/joi');
 
 const commonInputFieldsSchema = {
   blockchain_id:      joi.string().required(),
@@ -9,7 +10,7 @@ const commonInputFieldsSchema = {
   leading_text:       joi.string().required().allow([null, '']),
   description:        joi.string().required(),
 
-  entity_name_for:    joi.string().required().valid([ USERS, ORGANIZATIONS ]),
+  entity_name_for:    joi.string().required().valid([USERS, ORGANIZATIONS]),
 
   entity_images:      joi.object().required(),
   entity_tags:        joi.array().required().items(joi.string().min(1)),
