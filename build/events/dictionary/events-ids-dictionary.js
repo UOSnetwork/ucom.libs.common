@@ -13,5 +13,17 @@ class EventsIdsDictionary {
     static userUpdatesProfile() {
         return 151;
     }
+    static userCreatesMediaPostFromHimself() {
+        return 160;
+    }
+    static userUpdatesMediaPostFromHimself() {
+        return 161;
+    }
+    static userCreatesMediaPostFromOrganization() {
+        return 170;
+    }
+    static userUpdatesMediaPostFromOrganization() {
+        return 171;
+    }
 }
 module.exports = EventsIdsDictionary;
