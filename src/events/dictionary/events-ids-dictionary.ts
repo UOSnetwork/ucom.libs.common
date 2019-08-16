@@ -29,7 +29,7 @@ class EventsIdsDictionary {
     return 161;
   }
 
-  public static userUpdatesDirectPostFromHimself(): number {
+  public static userUpdatesDirectPostForUser(): number {
     return 162;
   }
 
@@ -41,7 +41,7 @@ class EventsIdsDictionary {
     return 171;
   }
 
-  public static userUpdatesDirectPostFromOrganization(): number {
+  public static userUpdatesDirectPostForOrganization(): number {
     return 172;
   }
 }

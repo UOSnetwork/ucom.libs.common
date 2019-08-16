@@ -22,7 +22,7 @@ class EventsIdsDictionary {
     static userUpdatesMediaPostFromHimself() {
         return 161;
     }
-    static userUpdatesDirectPostFromHimself() {
+    static userUpdatesDirectPostForUser() {
         return 162;
     }
     static userCreatesMediaPostFromOrganization() {
@@ -31,7 +31,7 @@ class EventsIdsDictionary {
     static userUpdatesMediaPostFromOrganization() {
         return 171;
     }
-    static userUpdatesDirectPostFromOrganization() {
+    static userUpdatesDirectPostForOrganization() {
         return 172;
     }
 }
