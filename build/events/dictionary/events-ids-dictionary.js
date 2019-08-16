@@ -1,6 +1,9 @@
 "use strict";
 // #task - completely move NotificationsEventIdDictionary from ucom.backend
 class EventsIdsDictionary {
+    static userCreatesDirectPostForOtherUser() {
+        return 70;
+    }
     static registration() {
         return 130;
     }
@@ -19,11 +22,17 @@ class EventsIdsDictionary {
     static userUpdatesMediaPostFromHimself() {
         return 161;
     }
+    static userUpdatesDirectPostFromHimself() {
+        return 162;
+    }
     static userCreatesMediaPostFromOrganization() {
         return 170;
     }
     static userUpdatesMediaPostFromOrganization() {
         return 171;
+    }
+    static userUpdatesDirectPostFromOrganization() {
+        return 172;
     }
 }
 module.exports = EventsIdsDictionary;

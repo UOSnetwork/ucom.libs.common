@@ -1,6 +1,10 @@
 // #task - completely move NotificationsEventIdDictionary from ucom.backend
 
 class EventsIdsDictionary {
+  public static userCreatesDirectPostForOtherUser(): number {
+    return 70;
+  }
+
   public static registration(): number {
     return 130;
   }
@@ -25,12 +29,20 @@ class EventsIdsDictionary {
     return 161;
   }
 
+  public static userUpdatesDirectPostFromHimself(): number {
+    return 162;
+  }
+
   public static userCreatesMediaPostFromOrganization(): number {
     return 170;
   }
 
   public static userUpdatesMediaPostFromOrganization(): number {
     return 171;
+  }
+
+  public static userUpdatesDirectPostFromOrganization(): number {
+    return 172;
   }
 }
 
