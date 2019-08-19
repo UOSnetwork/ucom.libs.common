@@ -44,6 +44,14 @@ class EventsIdsDictionary {
   public static userUpdatesDirectPostForOrganization(): number {
     return 172;
   }
+
+  public static userCreatesOrganization(): number {
+    return 180;
+  }
+
+  public static userUpdatesOrganization(): number {
+    return 181;
+  }
 }
 
 export = EventsIdsDictionary;

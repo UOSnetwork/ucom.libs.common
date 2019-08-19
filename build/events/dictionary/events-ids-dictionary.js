@@ -34,5 +34,11 @@ class EventsIdsDictionary {
     static userUpdatesDirectPostForOrganization() {
         return 172;
     }
+    static userCreatesOrganization() {
+        return 180;
+    }
+    static userUpdatesOrganization() {
+        return 181;
+    }
 }
 module.exports = EventsIdsDictionary;
