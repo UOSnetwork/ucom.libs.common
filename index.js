@@ -27,6 +27,7 @@ module.exports = {
     },
   },
   InteractionTypesDictionary: require('./build/common/dictionary/interaction-types-dictionary').InteractionTypesDictionary,
+  ContentTypesDictionary: require('./build/common/dictionary/content-types-dictionary').ContentTypesDictionary,
   Posts: {
     Dictionary: {
       PostTypes: require('./build/posts/dictionary/post-types'),
