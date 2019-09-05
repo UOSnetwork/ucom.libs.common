@@ -13,8 +13,8 @@ const commonInputFieldsSchema = {
     created_at: joi.string().required().regex(common_regex_1.DATETIME_STRING_UTC_REGEX),
     updated_at: joi.string().required().regex(common_regex_1.DATETIME_STRING_UTC_REGEX),
 };
-const blockchainContentFieldsSchema = Object.assign({}, commonInputFieldsSchema, { author_account_name: joi.string().length(12).required(), entity_blockchain_id_for: joi.string().required() });
-const blockchainContentFieldsFromOrganizationSchema = Object.assign({}, blockchainContentFieldsSchema, { organization_blockchain_id: joi.string().required() });
+const blockchainContentFieldsSchema = Object.assign(Object.assign({}, commonInputFieldsSchema), { author_account_name: joi.string().length(12).required(), entity_blockchain_id_for: joi.string().required() });
+const blockchainContentFieldsFromOrganizationSchema = Object.assign(Object.assign({}, blockchainContentFieldsSchema), { organization_blockchain_id: joi.string().required() });
 const commonOptions = {
     abortEarly: false,
     allowUnknown: false,

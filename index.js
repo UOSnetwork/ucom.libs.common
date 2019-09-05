@@ -22,10 +22,11 @@ module.exports = {
   },
   Common: {
     Dictionary: {
-      CommonHeaders:  require('./build/common/dictionary/common-headers'),
-      EntityNames:    require('./build/common/dictionary/entity-names'),
+      CommonHeaders:    require('./build/common/dictionary/common-headers'),
+      EntityNames:      require('./build/common/dictionary/entity-names'),
     },
   },
+  InteractionTypesDictionary: require('./build/common/dictionary/interaction-types-dictionary').InteractionTypesDictionary,
   Posts: {
     Dictionary: {
       PostTypes: require('./build/posts/dictionary/post-types'),
