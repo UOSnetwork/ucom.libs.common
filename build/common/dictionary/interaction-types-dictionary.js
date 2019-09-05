@@ -42,9 +42,9 @@ class InteractionTypesDictionary {
     }
     static isOppositeActivityRequired(activityTypeId) {
         const required = [
-            this.getUnfollowId()
+            this.getUnfollowId(),
         ];
-        return required.indexOf(activityTypeId) !== -1;
+        return required.includes(activityTypeId);
     }
     static isDownvoteActivity(model) {
         return model.activity_type_id === this.getDownvoteId();

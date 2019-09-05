@@ -12,7 +12,6 @@ check-project-npm-outdated:
 	/bin/bash ./ci-scripts/check-project-npm-outdated.sh
 
 check-project-before-commit cbc:
-	make compile-typescript
 	make check-by-eslint
 	make check-project-npm-outdated
 	make check-by-snyk
