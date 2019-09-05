@@ -24,6 +24,4 @@ class ContentTypesDictionary {
   }
 }
 
-export {
-  ContentTypesDictionary,
-};
+export = ContentTypesDictionary;

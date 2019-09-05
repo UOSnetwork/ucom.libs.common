@@ -27,4 +27,4 @@ declare class InteractionTypesDictionary {
 
   static isDownvoteActivity(model: any): boolean;
 }
-export { InteractionTypesDictionary };
+export = InteractionTypesDictionary;

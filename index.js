@@ -26,8 +26,8 @@ module.exports = {
       EntityNames:      require('./build/common/dictionary/entity-names'),
     },
   },
-  InteractionTypesDictionary: require('./build/common/dictionary/interaction-types-dictionary').InteractionTypesDictionary,
-  ContentTypesDictionary: require('./build/common/dictionary/content-types-dictionary').ContentTypesDictionary,
+  InteractionTypesDictionary: require('./build/common/dictionary/interaction-types-dictionary'),
+  ContentTypesDictionary: require('./build/common/dictionary/content-types-dictionary'),
   Posts: {
     Dictionary: {
       PostTypes: require('./build/posts/dictionary/post-types'),

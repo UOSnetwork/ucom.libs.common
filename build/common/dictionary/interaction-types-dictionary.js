@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class InteractionTypesDictionary {
     static getTrustId() {
         return 30;
@@ -50,4 +49,4 @@ class InteractionTypesDictionary {
         return model.activity_type_id === this.getDownvoteId();
     }
 }
-exports.InteractionTypesDictionary = InteractionTypesDictionary;
+module.exports = InteractionTypesDictionary;

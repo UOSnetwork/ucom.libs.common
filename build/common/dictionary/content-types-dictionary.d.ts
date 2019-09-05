@@ -11,4 +11,4 @@ declare class ContentTypesDictionary {
 
   static getTypeRepost(): number;
 }
-export { ContentTypesDictionary };
+export = ContentTypesDictionary;

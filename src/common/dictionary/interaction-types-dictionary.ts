@@ -64,6 +64,4 @@ class InteractionTypesDictionary {
   }
 }
 
-export {
-  InteractionTypesDictionary,
-};
+export = InteractionTypesDictionary;

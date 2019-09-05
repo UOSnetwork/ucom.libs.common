@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class ContentTypesDictionary {
     static getTypeMediaPost() {
         return 1;
@@ -20,4 +19,4 @@ class ContentTypesDictionary {
         return 11;
     }
 }
-exports.ContentTypesDictionary = ContentTypesDictionary;
+module.exports = ContentTypesDictionary;
