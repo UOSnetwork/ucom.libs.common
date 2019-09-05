@@ -30,6 +30,7 @@ module.exports = {
     "eslint/no-unused-vars": 'off',
     "import/no-unresolved": 'off',
     "import/prefer-default-export": 'off',
+    "node/no-missing-import": 'off',
   },
   "overrides": [
     {

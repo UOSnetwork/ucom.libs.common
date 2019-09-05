@@ -53,10 +53,10 @@ class InteractionTypesDictionary {
 
   public static isOppositeActivityRequired(activityTypeId: number): boolean {
     const required = [
-      this.getUnfollowId()
+      this.getUnfollowId(),
     ];
 
-    return required.indexOf(activityTypeId) !== -1;
+    return required.includes(activityTypeId);
   }
 
   public static isDownvoteActivity(model): boolean {
@@ -66,4 +66,4 @@ class InteractionTypesDictionary {
 
 export {
   InteractionTypesDictionary,
-}
+};
