@@ -17,17 +17,19 @@ module.exports = {
   },
   Events: {
     Dictionary: {
-      EventsIds: require('./build/events/dictionary/events-ids-dictionary'),
+      EventsIds: require('./build/events/dictionary/events-ids-dictionary'), // deprecated, use a direct import
     }
   },
   Common: {
     Dictionary: {
       CommonHeaders:    require('./build/common/dictionary/common-headers'),
-      EntityNames:      require('./build/common/dictionary/entity-names'),
+      EntityNames:      require('./build/common/dictionary/entity-names'), // deprecated, use a direct import
     },
   },
   InteractionTypesDictionary: require('./build/common/dictionary/interaction-types-dictionary'),
   ContentTypesDictionary: require('./build/common/dictionary/content-types-dictionary'),
+  EntityNames: require('./build/common/dictionary/entity-names'),
+  EventsIdsDictionary: require('./build/events/dictionary/events-ids-dictionary'),
   Posts: {
     Dictionary: {
       PostTypes: require('./build/posts/dictionary/post-types'),
