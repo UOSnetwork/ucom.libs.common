@@ -22,6 +22,10 @@ class ContentTypesDictionary {
   public static getTypeRepost(): number {
     return 11;
   }
+
+  public static getTypeAutoUpdate(): number {
+    return 12;
+  }
 }
 
 export = ContentTypesDictionary;

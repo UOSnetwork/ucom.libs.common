@@ -10,5 +10,7 @@ declare class ContentTypesDictionary {
   static getTypeDirectPost(): number;
 
   static getTypeRepost(): number;
+
+  static getTypeAutoUpdate(): number;
 }
 export = ContentTypesDictionary;

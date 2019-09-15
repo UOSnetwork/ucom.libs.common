@@ -18,5 +18,8 @@ class ContentTypesDictionary {
     static getTypeRepost() {
         return 11;
     }
+    static getTypeAutoUpdate() {
+        return 12;
+    }
 }
 module.exports = ContentTypesDictionary;
