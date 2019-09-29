@@ -5,14 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "os-locale": "^4.0.0",
-    "regexp-tree": "^0.1.13"
+    "os-locale": "^4.0.0"
   },
   "devDependencies": {
     "@types/hapi__joi": "^15.0.4",
-    "@typescript-eslint/eslint-plugin": "^2.2.0",
-    "@typescript-eslint/parser": "^2.2.0",
-    "eslint": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.5.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
@@ -21,10 +20,10 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.4.0",
     "eslint-plugin-typescript": "^0.14.0",
-    "eslint-plugin-unicorn": "^10.0.0",
+    "eslint-plugin-unicorn": "^12.0.1",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.7.0",
     "tslint": "^5.20.0",
-    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-airbnb": "^5.11.2",
     "tsutils": "^3.17.1",
     "typescript": "^3.6.3"
   },

@@ -5,6 +5,12 @@ publish:
 	git push
 	npm publish
 
+publish-without-checks:
+	git checkout master
+	npm version ${VER}
+	git push
+	npm publish
+
 check-project-not-committed-changes:
 	/bin/bash ./ci-scripts/check-project-not-committed-changes.sh
 
