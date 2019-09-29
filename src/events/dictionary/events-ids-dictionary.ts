@@ -230,6 +230,14 @@ class EventsIdsDictionary {
   public static userUpdatesOrganization(): number {
     return 181;
   }
+
+  public static userUpdatesCommentFromAccount(): number {
+    return 182;
+  }
+
+  public static userUpdatesCommentFromOrganization(): number {
+    return 183;
+  }
 }
 
 export = EventsIdsDictionary;

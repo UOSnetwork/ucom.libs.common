@@ -177,5 +177,11 @@ class EventsIdsDictionary {
     static userUpdatesOrganization() {
         return 181;
     }
+    static userUpdatesCommentFromAccount() {
+        return 182;
+    }
+    static userUpdatesCommentFromOrganization() {
+        return 183;
+    }
 }
 module.exports = EventsIdsDictionary;
