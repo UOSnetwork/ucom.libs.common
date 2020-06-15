@@ -6,12 +6,12 @@ Url to auth via github is:
 
 Staging:
 ```
-https://github.com/login/oauth/authorize/?client_id=ec17c7e5b1f383034c25&state=5idkWlsZKzbpcD7u&redirect_uri=https://staging-backend.u.community/api/v1/github/auth_callback?redirect_uri=https://staging.u.community/users
+https://github.com/login/oauth/authorize/?client_id=ec17c7e5b1f383034c25&state=5idkWlsZKzbpcD7u&redirect_uri=https://staging-backend.ucommunity.io/api/v1/github/auth_callback?redirect_uri=https://staging.ucommunity.io/users
 ```
 
 Production:
 ```
-https://github.com/login/oauth/authorize/?client_id=8b4ef608525c8aff2d5e&state=5idkWlsZKzbpcD7u&redirect_uri=https://backend.u.community/api/v1/github/auth_callback?redirect_uri=https://u.community/users
+https://github.com/login/oauth/authorize/?client_id=8b4ef608525c8aff2d5e&state=5idkWlsZKzbpcD7u&redirect_uri=https://backend.ucommunity.io/api/v1/github/auth_callback?redirect_uri=https://ucommunity.io/users
 ```
 
 Uri contains two `redirect_uri` sections. Client should change last `redirect_uri` in order determine where
